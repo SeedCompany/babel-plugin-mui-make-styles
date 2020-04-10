@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "commonjs",
+    "lib": ["ES2019"],
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "exclude": ["dist"]
+}

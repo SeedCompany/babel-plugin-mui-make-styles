@@ -1,0 +1,55 @@
+{
+  "name": "babel-plugin-mui-make-styles",
+  "version": "0.0.2",
+  "description": "Babel plugin for material-ui's makeStyles",
+  "keywords": [
+    "babel-plugin",
+    "material-ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seedcompany/babel-plugin-mui-make-styles.git"
+  },
+  "bugs": {
+    "url": "https://github.com/seedcompany/babel-plugin-mui-make-styles/issues"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "files": [
+    "src/**/*",
+    "dist/**/*"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "rimraf ./dist && tsc -b tsconfig.build.json",
+    "lint": "eslint . --ext .ts --fix",
+    "test": "jest",
+    "type-check": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@seedcompany/eslint-plugin": "~0.0.2",
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.11.1",
+    "eslint": "^6.8.0",
+    "husky": "^4.2.3",
+    "jest": "^25.2.7",
+    "lint-staged": "^10.1.0",
+    "prettier": "^2.0.2",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^25.3.1",
+    "ts-node": "^8.8.1",
+    "typescript": "^3.8.3"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "roots": [
+      "<rootDir>/src"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
