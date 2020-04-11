@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-mui-make-styles",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Babel plugin for material-ui's makeStyles",
   "keywords": [
     "babel-plugin",
@@ -16,7 +16,6 @@
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
-    "src/**/*",
     "dist/**/*"
   ],
   "engines": {
