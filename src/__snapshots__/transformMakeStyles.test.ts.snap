@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`works basic 1`] = `
+"import { makeStyles } from '@material-ui/core';
+const useStyles = makeStyles({
+  foo: {
+    color: 'red'
+  }
+}, {
+  classNamePrefix: \\"MyButton\\"
+});"
+`;
+
+exports[`works imported from core/styles 1`] = `
+"import { makeStyles } from '@material-ui/core/styles';
+const useStyles = makeStyles({
+  foo: {
+    color: 'red'
+  }
+}, {
+  classNamePrefix: \\"MyButton\\"
+});"
+`;
+
+exports[`works imported from core/styles/makeStyles 1`] = `
+"import { makeStyles } from '@material-ui/core/styles/makeStyles';
+const useStyles = makeStyles({
+  foo: {
+    color: 'red'
+  }
+}, {
+  classNamePrefix: \\"MyButton\\"
+});"
+`;
+
+exports[`works imported from styles 1`] = `
+"import { makeStyles } from '@material-ui/styles';
+const useStyles = makeStyles({
+  foo: {
+    color: 'red'
+  }
+}, {
+  classNamePrefix: \\"MyButton\\"
+});"
+`;
+
+exports[`works with multiple imports 1`] = `
+"import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles as ms } from '@material-ui/core';
+const useStyles = ms({
+  foo: {
+    color: 'red'
+  }
+}, {
+  classNamePrefix: \\"MyButton\\"
+});
+const useStyles2 = makeStyles({
+  foo: {
+    color: 'red'
+  }
+}, {
+  classNamePrefix: \\"MyButton\\"
+});"
+`;
+
+exports[`works with options already defined 1`] = `
+"import { makeStyles } from '@material-ui/core';
+const useStyles = makeStyles({
+  foo: {
+    color: 'red'
+  }
+}, {
+  classNamePrefix: \\"MyButton\\",
+  flip: true
+});"
+`;
+
+exports[`works with prefix already defined 1`] = `
+"import { makeStyles } from '@material-ui/core';
+const useStyles = makeStyles({
+  foo: {
+    color: 'red'
+  }
+}, {
+  classNamePrefix: 'FooBar'
+});"
+`;
+
+exports[`works with renamed import 1`] = `
+"import { makeStyles as ms } from '@material-ui/core';
+const useStyles = ms({
+  foo: {
+    color: 'red'
+  }
+}, {
+  classNamePrefix: \\"MyButton\\"
+});"
+`;
